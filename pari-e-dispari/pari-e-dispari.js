@@ -13,3 +13,13 @@ function isEvenOrOdd(num1) {
     }
 }
 //FINE FUNZIONI
+
+// INIZIO PROGRAMMA
+
+//inserisce pari/dispari e un numero da 1 a 5 + stampali
+let evenOdd = prompt('Vuoi inserire un numero PARI o DISPARI?');
+console.log(`Hai scommesso su una somma: ${evenOdd}`);
+
+let userNumber = parseFloat(prompt('Inserisci un numero intero da 1 a 5'));
+console.log(`Hai inserito il numero: ${userNumber}`);
+
