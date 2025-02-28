@@ -15,13 +15,13 @@ function palindroma(word) {
         reverseWord += word[i];
     }
 
-    // if (word === reverseWord) {
-    //     return true;
-    // } return false;
-
-    if (word === reverseWord){
-        return `La parola "${word}" è palindroma.`
-    } else{
-        return `La parola "${word}" non è palindroma.`
-    }
+    if (word === reverseWord) {
+        return true;
+    } return false;
 }
+
+// se è palindroma stampa risposta positiva
+// altrimenti negativa
+if (palindroma(word) === true) {
+console.log(`La parola "${word}" è palindroma.`);
+} else console.log(`La parola "${word}" non è palindroma.`);
