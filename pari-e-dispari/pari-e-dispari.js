@@ -23,3 +23,9 @@ console.log(`Hai scommesso su una somma: ${evenOdd}`);
 let userNumber = parseFloat(prompt('Inserisci un numero intero da 1 a 5'));
 console.log(`Hai inserito il numero: ${userNumber}`);
 
+//condizioni di validità numero
+let numberNotValid = ((isNaN(userNumber) === true) || (userNumber < 1 || userNumber > 5)) || (Number.isInteger(userNumber) === false);
+
+//condizioni di validità evenOrOdd
+let evenOddNotValid = (((evenOdd !== 'dispari' && evenOdd !== 'Dispari') && evenOdd !== 'pari') && evenOdd !== 'Pari');
+
