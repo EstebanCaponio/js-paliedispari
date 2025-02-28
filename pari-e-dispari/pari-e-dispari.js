@@ -29,3 +29,13 @@ let numberNotValid = ((isNaN(userNumber) === true) || (userNumber < 1 || userNum
 //condizioni di validità evenOrOdd
 let evenOddNotValid = (((evenOdd !== 'dispari' && evenOdd !== 'Dispari') && evenOdd !== 'pari') && evenOdd !== 'Pari');
 
+//se i dati inseriti non sono validi manda alert
+if (numberNotValid) {
+
+    alert('Il valore inserito non è corretto, partita annullata.');
+
+} else if (evenOddNotValid) {
+
+    alert('Il valore inserito non è "pari o dispari", partita annullata.');
+
+}
