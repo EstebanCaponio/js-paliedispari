@@ -39,3 +39,24 @@ if (numberNotValid) {
     alert('Il valore inserito non è "pari o dispari", partita annullata.');
 
 }
+//ALTRIMENTI continua il ciclo
+else {
+    //creo una variabile per usare la funzione
+    let computerRandom = computerNumber(5)
+    //stampo il numero random del computer
+    console.log(`Il computer ha inserito il numero: ${computerRandom}`);
+
+    //somma dei due numeri
+    let sum = userNumber + computerRandom;
+    console.log(`La somma dei due numeri è ${sum}`);
+
+    //evoco la variabile per visualizzare il messaggio in console
+    isEvenOrOdd(sum);
+
+    //se la somma è pari e l'utente ha inserito pari allora ha vinto ALTRIMENTI ha perso
+    if (sum % 2 === 0 && (evenOdd === 'pari' || evenOdd === 'Pari')) {
+        console.log('Hai vinto!');
+    } else {
+        console.log('Mi spaice, hai perso.');
+    }
+}
