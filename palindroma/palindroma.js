@@ -19,3 +19,9 @@ function palindroma(word) {
         return true;
     } return false;
 }
+
+// se è palindroma stampa risposta positiva
+// altrimenti negativa
+if (palindroma(word) === true) {
+    console.log(`La parola "${word}" è palindroma.`);
+} else console.log(`La parola "${word}" non è palindroma.`);
